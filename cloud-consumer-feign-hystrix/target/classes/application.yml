@@ -24,3 +24,10 @@ management:
 feign:
   hystrix:
     enabled: true
+hystrix:
+    command:
+        serverMethod:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 5000
