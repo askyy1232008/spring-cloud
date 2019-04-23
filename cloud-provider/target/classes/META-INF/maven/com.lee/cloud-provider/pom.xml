@@ -60,5 +60,24 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
+		<!-- fastjson -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.31</version>
+		</dependency>
+		<!-- jedis -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+		</dependency>
+		<!-- loaclhost libs -->
+		<dependency> 
+			<groupId>openapi.sdk</groupId>
+			<artifactId>openapi-sdk</artifactId>
+			<version>4.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/openapi-sdk-4.0.jar</systemPath>
+		</dependency>
 	</dependencies>
 </project>
