@@ -8,7 +8,13 @@ spring:
       type: web
   application:
     name: cloud-provider
-
+  datasource:
+    url: jdbc:mysql://120.77.81.96:3306/springcloud?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: lifu
+    driverClassName : com.mysql.jdbc.Driver
+mybatis:
+    type-aliases-package: com.cloud.provider.domain
 
 server:
   port: 8078
