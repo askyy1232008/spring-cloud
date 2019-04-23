@@ -29,7 +29,8 @@ public class UserController {
     @GetMapping("/getName")
     @HystrixCommand(fallbackMethod = "getNameFallback")
     public String getName(){
-    	 return restTemplate.getForObject("http://cloud-provider/user/getName",String.class);
+//    	 return restTemplate.getForObject("http://cloud-provider/user/getName",String.class);
+    	return restTemplate.getForObject("http://cloud-zuul/user/user/getName?token=1",String.class);
     }
     
     public String getNameFallback() {
