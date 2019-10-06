@@ -9,12 +9,6 @@ import com.cloud.provider.domain.User;
 
 public interface UserMapper {
 	
-//    int deleteByPrimaryKey(Integer id);
-
-//    int insert(User record);
-
-//    int insertSelective(User record);
-	
 	@Select("Select id,name,age from user where id= #{id}")
 	@Results({
 		@Result(property = "id",column = "id",javaType = Integer.class),
@@ -23,7 +17,4 @@ public interface UserMapper {
 	})
     User selectByPrimaryKey(@Param("id") Long id);
 
-//    int updateByPrimaryKeySelective(User record);
-
-//    int updateByPrimaryKey(User record);
 }

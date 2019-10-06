@@ -9,13 +9,13 @@ public final class OpenAPIUtil {
 	 * 务调用登录接口将令牌缓存起来，多个服务统一从共享缓存中获取令牌。
 	 * 令牌失效后再调用登录接口获取令牌，避免频繁调用登录接口，建议一天内登录次数不超过10 次，超过10次将触发安全系统报警。
 	 */
-	private static String OPENAPI_NAME= "***";
-	private static String OPENAPI_PWD= "***";
-	private static String OPENAPI_CLIENT_ID = "***";
+	private static String OPENAPI_NAME= "2564ec08-f850-4b4a-af60-59e11a501f53";
+	private static String OPENAPI_PWD= "b7631027Y094755LZaZ55t5e5X1cmQ";
+	private static String OPENAPI_CLIENT_ID = "85fd3805-3350-47b6-a284-f99b5b26ecbd";
 	
-//	private static String TEST_OPENAPI_NAME= "***";
-//	private static String TEST_OPENAPI_PWD= "***";
-//	private static String TEST_OPENAPI_CLIENT_ID = "***";
+//	private static String TEST_OPENAPI_NAME= "771946bb-5989-4492-9037-56c837e04aef";
+//	private static String TEST_OPENAPI_PWD= "hQ8l3O4c4L3PI9Iuu73r337T4QegV0";
+//	private static String TEST_OPENAPI_CLIENT_ID = "6f258f2a-6c89-42a1-9320-9bdb3ac22bf6";
 	
 	private static String ZHENGSHI = "https://zhiyunopenapi.95155.com";
 //	private static String CESHI = "https://testopen.95155.com";
