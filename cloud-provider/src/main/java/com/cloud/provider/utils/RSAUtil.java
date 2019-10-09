@@ -19,6 +19,9 @@ import java.util.Date;
 
 import javax.crypto.Cipher;
 
+/**
+ * RSA加密解密
+ */
 public class RSAUtil {
 
 	private final static String PUBLIC_KEY_PATH = "c:/publicKeyFile";

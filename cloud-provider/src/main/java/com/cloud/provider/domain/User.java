@@ -1,5 +1,6 @@
 package com.cloud.provider.domain;
 
+
 public class User{
 
     private long id;

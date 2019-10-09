@@ -5,6 +5,15 @@ import java.time.format.DateTimeFormatter;
 
 import com.alibaba.fastjson.JSONObject;
 
+/**
+ * 返回数据帮助类  与 statusCode 同时使用
+ *		JSONObject jobj = new JSONObject();
+ * 		ResultBuilder<JSONObject> resultBuilder;
+ * 		jobj.put("r", r);
+ * 		resultBuilder = new ResultBuilder<>(jobj, StatusCode.SUCCESS);/resultBuilder = new ResultBuilder<>(jobj, StatusCode.FALL);
+ * 		return resultBuilder;
+ * @param <T>
+ */
 public class ResultBuilder<T> {
 
 	public ResultBuilder(T data, int code, String message) {

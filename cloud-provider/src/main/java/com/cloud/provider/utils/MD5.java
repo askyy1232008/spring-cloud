@@ -3,7 +3,15 @@ package com.cloud.provider.utils;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/**
+ * MD5 32位加密
+ */
 public class MD5 {
+    /***
+     * MD5 32位加密
+     * @param plainText 明文
+     * @return 密文
+     */
     public static String getMd5(String plainText) {  
           try {  
              MessageDigest md = MessageDigest.getInstance("MD5");  

@@ -6,7 +6,9 @@ import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 
 import com.cloud.provider.domain.User;
+import org.springframework.stereotype.Component;
 
+@Component
 public interface UserMapper {
 	
 	@Select("Select id,name,age from user where id= #{id}")

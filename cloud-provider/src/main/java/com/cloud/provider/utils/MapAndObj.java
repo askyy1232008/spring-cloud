@@ -7,9 +7,16 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
-
+/**
+ * map 和 obj 转换帮助类
+ */
 public final class MapAndObj {
-
+    /**
+     * obj转换为map
+     * @param obj
+     * @return map
+     * @throws Exception
+     */
 	public static Map<String,Object> obj2Map(Object obj) throws Exception{
         Map<String,Object> map=new HashMap<String, Object>();
         BeanInfo beanInfo = Introspector.getBeanInfo(obj.getClass());
@@ -25,7 +32,14 @@ public final class MapAndObj {
          }
         return map;
     }
-    
+
+    /***
+     * map转换为obj
+     * @param map
+     * @param clz
+     * @return obj
+     * @throws Exception
+     */
     public static Object map2Obj(Map<String,Object> map,Class<?> clz) throws Exception{
         if (map == null)   
             return null;    

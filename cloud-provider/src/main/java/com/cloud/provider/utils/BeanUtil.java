@@ -7,6 +7,13 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 关于Bean 和 Map 转换的帮助类
+ * @Auther:lee
+ * @Description: TODO
+ * @CreateTime: 2017年10月25日 下午3:20:44
+ * @version V1.0
+ */
 public final class BeanUtil {
 
 	// Map --> Bean 1: 利用Introspector,PropertyDescriptor实现 Map --> Bean
@@ -32,7 +39,7 @@ public final class BeanUtil {
 			System.out.println("transMap2Bean Error " + e);
 		}
 
-		return;
+		return ;
 
 	}
 

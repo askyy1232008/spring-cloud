@@ -71,7 +71,7 @@
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
 		</dependency>
-		<!-- loaclhost libs -->
+		<!-- loaclhost libs 中交兴路SDK -->
 		<dependency> 
 			<groupId>openapi.sdk</groupId>
 			<artifactId>openapi-sdk</artifactId>
@@ -94,6 +94,30 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+		<!-- CsvUtils https://mvnrepository.com/artifact/net.sourceforge.javacsv/javacsv -->
+		<dependency>
+			<groupId>net.sourceforge.javacsv</groupId>
+			<artifactId>javacsv</artifactId>
+			<version>2.0</version>
+		</dependency>
+		<!-- DatesUtil commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+		<!-- SendEmailUtil https://mvnrepository.com/artifact/com.sun.mail/javax.mail -->
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>1.6.2</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/javax.mail-1.6.2.jar</systemPath>
+		</dependency>
+		<!-- RedisConfig redis jedis -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
 	</dependencies>
 </project>

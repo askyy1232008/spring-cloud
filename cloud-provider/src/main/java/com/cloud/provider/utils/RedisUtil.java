@@ -4,6 +4,9 @@ import com.alibaba.fastjson.JSON;
 
 import redis.clients.jedis.Jedis;
 
+/**
+ * Redis帮助类  与 RedisPool 同时使用
+ */
 public final class RedisUtil {
 
 	public static Object get(String key) {

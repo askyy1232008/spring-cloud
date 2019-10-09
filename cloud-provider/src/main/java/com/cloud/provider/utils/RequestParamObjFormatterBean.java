@@ -7,8 +7,16 @@ import javax.servlet.http.HttpServletRequest;
 
 import com.alibaba.fastjson.JSONObject;
 
+/**
+ * 将请求的参数列表转换为obj(bean)
+ */
 public final class RequestParamObjFormatterBean {
-	
+	/**
+	 * 将请求的参数列表转换为obj(bean)
+	 * @param request
+	 * @param classN
+	 * @return obj
+	 */
 	public static Object formatter(HttpServletRequest request,Class<?> classN){
 		BufferedReader br;
 		try {

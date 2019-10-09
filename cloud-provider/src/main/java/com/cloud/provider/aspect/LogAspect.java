@@ -1,8 +1,8 @@
 package com.cloud.provider.aspect;
 
-import com.cloud.provider.dao.SysLogDao;
 import com.cloud.provider.domain.SysLog;
 import com.cloud.provider.log.MySystemLog;
+import com.cloud.provider.service.SysLogService;
 import com.cloud.provider.utils.HttpContextUtils;
 import com.cloud.provider.utils.IpUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -18,12 +18,15 @@ import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
 import java.sql.Timestamp;
 
+/***
+ * AOP Log 类 用于记录用户操作
+ */
 @Aspect
 @Component
 public class LogAspect {
 
     @Autowired
-    private SysLogDao sysLogDao;
+    private SysLogService sysLogService;
 
     @Pointcut("@annotation(com.cloud.provider.log.MySystemLog.Log)")
     public void pointcut(){ }
@@ -80,6 +83,6 @@ public class LogAspect {
         sysLog.setTime((int) time);
         sysLog.setCreateTime(new Timestamp(System.currentTimeMillis()));
         // 保存系统日志
-        sysLogDao.saveSysLog(sysLog);
+        sysLogService.saveSysLog(sysLog);
     }
 }

@@ -8,6 +8,9 @@ import java.net.UnknownHostException;
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * ip和mac 获取帮助类
+ */
 public class IpUtils {
     private IpUtils() {
     }
